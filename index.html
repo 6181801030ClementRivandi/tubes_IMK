@@ -50,22 +50,14 @@
 
 		</div>
 		
-		<div class="">
+		<div style="margin-top: 150px;">
 
-			<div class="carousel-container">
-
-				<div class="images slides">
-					<img src="img/hario1.jpg">
-				</div>
-	
-				<div class="images slides">
-					<img src="img/hario2.jpg">
-				</div>
-	
-				<div class="images slides">
-					<img src="img/hario3.jpg">
-				</div>
-	
+			<div class="w3-content w3-section">
+			  
+				<img class="mySlides w3-animate-fading" src="./img/hario1.jpg">
+				<img class="mySlides w3-animate-fading" src="./img/hario2.jpg">
+				<img class="mySlides w3-animate-fading" src="./img/hario3.jpg">
+				<img class="mySlides w3-animate-fading" src="./img/hario4.jpg">
 			</div>
 
 		</div>
@@ -95,5 +87,20 @@
 		<br>
 		
 	</body>
-	<script type="text/javascript" src="script.js"></script>
+	<script>
+		var myIndex = 0;
+		carousel();
+		
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 9000);    
+		}
+		</script>
 </html>

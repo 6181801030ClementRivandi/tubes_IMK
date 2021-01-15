@@ -14,7 +14,7 @@ img{
 .carousel-container{
 	position: relative;
 	margin: auto;
-	border-bottom: solid skyblue;
+	border-bottom: solid rgb(204, 204, 204);
 	height: 665px;
 	overflow: hidden;
 }
