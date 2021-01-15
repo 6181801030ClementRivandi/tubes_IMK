@@ -50,57 +50,39 @@
 
 		</div>
 		
-		<div style="margin-top: 150px;">
+		<div style="margin-top: 75px;">
 
-			<div class="w3-content w3-section">
-			  
+			<div style="position: relative;">
 				<img class="mySlides w3-animate-fading" src="./img/hario1.jpg">
 				<img class="mySlides w3-animate-fading" src="./img/hario2.jpg">
 				<img class="mySlides w3-animate-fading" src="./img/hario3.jpg">
-				<img class="mySlides w3-animate-fading" src="./img/hario4.jpg">
 			</div>
 
-		</div>
-		
-		<br>
+			<button style="margin-top: 150px" class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button style="margin-top: 150px" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 
-		<div style="margin: auto; width: 85%;" class="">
-
-			<div class="w3-card-4" style="width:75%; margin: auto">
-
-				<img src="img/hario4.jpg" style="width:100%">
-
-				<div class="w3-container" style="background-color: #f8f8f8; padding-bottom: 10px;">
-					<h2 class="w3-center w3-text-theme" style="font-weight: bold">HARIO CATALOGUE</h2>
-					<p class="w3-center w3-large">
-						The company has been dedicated to the design, production, and sale of heatproof glass since it was founded in 1921 and is the only heatproof glass manufacturer in Japan to have a factory.
-					</p>
-
-					<a href="#" class="w3-btn w3-theme-d3 w3-center" style="display: block; margin: 0 auto; width: 12%;">
-						EXPLORE
-					</a>
-				</div>
-				
-			</div>
 		</div>
 
 		<br>
 		
 	</body>
 	<script>
-		var myIndex = 0;
-		carousel();
+		var myIndex = 1;
+		carousel(myIndex);
 		
-		function carousel() {
+		function carousel(n) {
 		  var i;
 		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {myIndex = 1}
+		  if ( n < 1){myIndex = x.length}  
 		  for (i = 0; i < x.length; i++) {
 			x[i].style.display = "none";  
-		  }
-		  myIndex++;
-		  if (myIndex > x.length) {myIndex = 1}    
+		  }  
 		  x[myIndex-1].style.display = "block";  
 		  setTimeout(carousel, 9000);    
+		}
+		function plusDivs(n) {
+  			carousel(myIndex += n);
 		}
 		</script>
 </html>
