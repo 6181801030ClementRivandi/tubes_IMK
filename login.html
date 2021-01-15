@@ -6,7 +6,7 @@
     
     <meta charset="utf-8">
 
-    <title>TogetherWeCan - Login</title>
+    <title>TokoOnlineKu - Login</title>
 
     <link rel="stylesheet" href="../View/style/loginStyle.css">
 
@@ -16,21 +16,22 @@
 
     <div class="main">
 
-      <p>TogetherWeCan !</p>
+      <p>TokoOnlineKu</p>
 
       <hr>
 
-      <h1 style="margin-left: 10px;">Login</h1>
+      <h1 style="max-width: 500px; margin: auto;">Login</h1>
 
       <br>
 
-      <div class="divLogin">
+      <div class="divLogin" style = "max-width: 500px; margin: auto;">
 
         <form method="post" action="../Controller/login.php">
 
           <div class="input-group">
 
             <label id="label-1" style="font-size: 20px;">Username</label>
+            <br>
             <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
             id="input-1" type="text" name="username" required>
 
@@ -41,6 +42,7 @@
           <div class="input-group">
 
             <label id="label-2" style="font-size: 20px;">Password</label>
+            <br>
             <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
             type="password" name="password" required></input>
 
@@ -56,16 +58,33 @@
 
       </div>
 
-      <a id="fp" style="margin-left: 10px;font-size: 20px;" href="../View/forgotPassword.html"><b>Forgot Password?</b></a>
+      <a id="fp" style="margin: auto;font-size: 20px;" href="../View/forgotPassword.html"><b>Forgot Password?</b></a>
 
       <br><hr><br>
 
-      <a style="font-size: 20px;"><b>Don't have an account? &nbsp;</b><a id="su" style="font-size: 20px;" href="../View/registration.html"><b>Sign Up</b></a></a>
+      <a style="max-width: 500px; margin: auto;font-size: 20px;"><b>Don't have an account? &nbsp;</b><a id="su" style="font-size: 20px;" href="../View/registration.html"><b>Sign Up</b></a></a>
 
     </div>
 
     <script src="../View/style/Script/login.js"></script>
-    
+    <div id='id01' class="w3-modal">
+      <!-- Modal Box-->
+      <div class="w3-modal-content" style='width: 30%; padding: 0.5%;'>
+          <!-- Close Button -->
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
+          <!-- Sign in form -->
+          <form class='' method='post' action='#'>
+              <p class="">Enter Username and Password</p>
+              <input class="w3-input" type="text" placeholder="Username"><br>
+              <input class="w3-input" type="text" placeholder="Password">
+              <p>
+                  <button class="w3-button w3-green w3-round-large">SIGN IN</button>
+                  <button class="w3-button w3-round-large" onclick="document.getElementById('id01').style.display='none'">CANCEL</button>
+              </p>
+              <p><a href=""><u>Forget password?</u></a></p>
+              <p>if you don't have any account, please <a href=""><u>SIGN UP</u></a>.</p>
+          </form>
+      </div>
   </body>
 
 </html>
