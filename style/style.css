@@ -1,0 +1,74 @@
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Candara.ttf);
+}
+body {
+	font-family: fonts;
+	background-color: #ebebeb;
+}
+
+img{
+	width: 100%;
+}
+
+.carousel-container{
+	position: relative;
+	margin: auto;
+	border-bottom: solid skyblue;
+	height: 665px;
+	overflow: hidden;
+}
+
+@keyframes slides {
+	0%{
+		left: 100%;
+	}
+	40%{
+		left: 0;
+	}
+	60%{
+		left: 0;
+	}
+	100%{
+		left: -100%;
+	}
+}
+
+.slides{
+	animation-name: slides;
+	animation-duration: 8s;
+}
+
+.images{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #bb3f79;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 72px;
+  }
