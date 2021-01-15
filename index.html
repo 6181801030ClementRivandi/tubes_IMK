@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>TokoOnlineKu</title>
+		<title>TokoOnlineKu | belanja mudah dan terpercaya</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="lib/w3.css">
 		<link rel="stylesheet" href="style/style.css">
@@ -52,20 +52,54 @@
 		
 		<div style="margin-top: 75px;">
 
-			<div style="position: relative;">
+			<div style="position: relative; height: 100px;">
 				<img class="mySlides w3-animate-fading" src="./img/hario1.jpg">
 				<img class="mySlides w3-animate-fading" src="./img/hario2.jpg">
 				<img class="mySlides w3-animate-fading" src="./img/hario3.jpg">
 			</div>
 
-			<button style="margin-top: 150px" class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button style="margin-top: 150px" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+				<div style="cursor: pointer;" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+				<div style="cursor: pointer;" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+			</div>
 
 		</div>
 
-		<br>
+		<div style="margin-top: 800px;">
+			<!-- Type 1 row -->
+			<div style="margin-left: 55px;" class="w3-row">
+				<!-- Column 1 -->
+				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
+					<img src="../img/coffee1.jpg" style="width:100%; cursor: pointer" class="w3-hover-opacity">
+					<div class="w3-center">
+						<p class=""><b>Christmas Blend Vintage 2016, Whole Bean (1lb)</b></p>
+						<p class="">$14.95</p>
+						<p align="center"><a href="#" class='w3-btn w3-theme-d3'>ADD TO CART</a></p>
+					</div>
+				</div>
+				<!-- Column 2 -->
+				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
+					<img src="../img/coffee2.jpg" style="width:100%; cursor: pointer" class="w3-hover-opacity">
+					<div class="w3-center">
+						<p class=""><b>Christmas Blend Vintage 2016, Whole Bean (1lb)</b></p>
+						<p class="">$14.95</p>
+						<p align="center"><a href="#" class='w3-btn w3-theme-d3'>ADD TO CART</a></p>
+					</div>
+				</div>
+				<!-- Column 3 -->
+				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
+					<img src="../img/coffee3.jpg" style="width:100%; cursor: pointer" class="w3-hover-opacity">
+					<div class="w3-center">
+						<p class=""><b>Christmas Blend Vintage 2016, Whole Bean (1lb)</b></p>
+						<p class="">$14.95</p>
+						<p align="center"><a href="#" class='w3-btn w3-theme-d3'>ADD TO CART</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 	</body>
+
 	<script>
 		var myIndex = 1;
 		carousel(myIndex);
@@ -84,5 +118,6 @@
 		function plusDivs(n) {
   			carousel(myIndex += n);
 		}
-		</script>
+	</script>
+	
 </html>
