@@ -7,8 +7,34 @@ body {
 	background-color: #ebebeb;
 }
 
+.box{
+  width: 50%;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: auto;
+  position: absolute; 
+  top: 40%; 
+  left: 10%;
+  right: 10%;
+  background:rgba(255, 255, 255, 0.5);
+  box-sizing: content-box;
+}
+
 img{
 	width: 100%;
+}
+
+img.account{
+  width : 150px;
+}
+img.stalls{
+  width : 153px;
+}
+img.maps{
+  width : 142px;
+}
+img.new{
+  width : 157px;
 }
 
 .carousel-container{
