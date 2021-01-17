@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <title>TokoOnlineKu | Masuk</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="lib/w3.css">
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="lib/font-awesome.min.css">
+		<link rel="stylesheet" href="lib/font-awesome.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body style="background-color: #f8f8f8;">
+
+    <div style="margin-left: 10%; margin-top: 1%; margin-right: 10%;">
+
+      <div class="w3-center">
+        <img src="img/tokoOnlineKuLogo.JPG" class="" style="height: 75px; width: 350px;">
+      </div>
+
+      <hr>
+
+      <div style="width: 50%; border-style: double; margin-left: 25%; margin-right: 20%;" class="w3-panel w3-border w3-round-xlarge">
+
+        <h1 style="text-align: center;">Masuk</h1>
+
+        <form method="post" action="">
+
+          <div>
+
+            <label id="label-1" style="font-size: 20px;">Username</label>
+            <br>
+            <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+            id="input-1" type="text" name="username" required>
+
+          </div>
+
+          <br>
+
+          <div>
+
+            <label id="label-2" style="font-size: 20px;">Password</label>
+            <br>
+            <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+            id="input-2" type="text" name="password" required>
+
+          </div>
+
+          <br>
+
+          <div class="w3-center"><p>Lupa password? Klik <a href="">disini</a>. </p></div>
+
+          <div class="w3-center">
+            <p><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 25px; padding-left: 10px; padding-right: 10px; cursor: pointer;">Masuk</button></p>
+          </div>
+
+        </form>
+
+      </div>
+
+      <div style="margin-top: 10px;">
+
+        <hr>
+
+        <div><p style="text-align: center; font-size: 20px;">Belum punya akun? <a href="daftar.html">Daftar</a> disini.</p></div>
+
+        <div style="text-align: center;"><a href="index.html"><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 25px; padding-left: 10px; padding-right: 10px; cursor: pointer;">Kembali ke TokoOnlineKu</button></a>
+        </div>
+
+        <br>
+
+      </div>
+
+    </div>
+
+
+    <script src="./script/login.js"></script>
+
+  </body>
+
+</html>
