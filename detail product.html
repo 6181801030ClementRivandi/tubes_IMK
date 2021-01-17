@@ -17,14 +17,14 @@
 			<div class="" style="background-color: #f8f8f8; height: 75px;">
 
 				<div class="" style="flex: 1; float: left;">
-					<a href="logged home.html"><img src="img/tokoOnlineKuLogo.JPG" class="" style="margin-left: 30px;padding-top: 3px; height: 75px; width: 300px;"></a>
+					<a href="index.html"><img src="img/tokoOnlineKuLogo.JPG" class="" style="margin-left: 30px;padding-top: 3px; height: 75px; width: 300px;"></a>
 				</div>
 
 				<div style="float: right;">
 					<ul class="w3-navbar" style="margin-top: 20px">
 
 						<li><a href="index.html" class="w3-hover-theme w3-gray">Home</a></li>
-						<li><a href="" class="w3-hover-theme">Keranjang</a></li>
+						<li><a class="w3-hover-theme" onclick="document.getElementById('id01').style.display='block'">Keranjang</a></li>
 						<li><a href="about.html" class="w3-hover-theme">Tentang</a></li>
 						<li><a href="" class="w3-hover-theme">Bantuan</a></li>
 
@@ -47,16 +47,14 @@
 							<button type="submit" style="font-size: 26px; margin-top: 5px; margin-left: -380px; margin-right: 100px;"><i class="fa fa-search"></i></button>
 						</div>
 						
-                    </form>
-                    
-                    <a href=""><i class="fa fa-bell" style="margin-left: 90px; margin-top: 25px; font-size: 25px;"></i></a>
+					</form>
 
-                    <a href="index.html"><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 20px; padding-left: 10px; padding-right: 10px; cursor: pointer; margin-left: 10px;">Whishlist</button></a>
-
-                    <a href="profile.html"><i class="fa fa-user" style="margin-left: 30px; margin-top: 25px; font-size: 25px;"></i></a>
-
-                    <a href="profile.html" style="text-decoration: none;"><p style="margin-top: -30px; margin-left: 1085px;">username</p></a>
-
+					<div style="float: right;">
+						<ul class="w3-navbar" style="margin-top: 20px">
+							<li><a class="w3-hover-theme" onclick="document.getElementById('id01').style.display='block'">Masuk</a></li>
+							<li><a href="daftar.html" class="w3-hover-theme">Daftar</a></li>
+						</ul>
+					</div>
 
 				</div>	
 				
@@ -371,6 +369,53 @@
 
 			</div>
 			
+		</div>
+
+		<div id='id01' class="w3-modal">
+			<!-- Modal Box-->
+			<div class="w3-modal-content" style='width: 30%; padding: 0.5%;'>
+				<!-- Close Button -->
+				<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
+				<!-- Sign in form -->
+
+				<br>
+
+				<h1 style="text-align: center;">Masuk</h1>
+
+				<form method="post" action="logged home.html">
+
+					<div>
+		  
+					  <label id="label-1" style="font-size: 20px;">Username</label>
+					  <br>
+					  <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+					  id="input-1" type="text" name="username" required>
+		  
+					</div>
+		  
+					<br>
+		  
+					<div>
+		  
+					  <label id="label-2" style="font-size: 20px;">Password</label>
+					  <br>
+					  <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+					  id="input-2" type="text" name="password" required>
+		  
+					</div>
+		  
+					<div class="w3-center"><p>Lupa password? Klik <a href="">disini</a>. </p></div>
+		  
+					<div class="w3-center">
+					  <button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 25px; padding-left: 10px; padding-right: 10px; cursor: pointer;"><a href="logged home.html"></a>Masuk</a></button>
+					</div>
+
+					<hr>
+
+					<div><p style="text-align: center; font-size: 20px;">Belum punya akun? <a href="daftar.html">Daftar</a> disini.</p></div>
+		  
+				  </form>
+			</div>
 		</div>
 		
 	</body>
