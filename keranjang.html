@@ -11,7 +11,8 @@
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	</head>
 
-	<body style="background-color: white;">
+    <body style="background-color: white;">
+        <!-- HEADER -->
 		<div class="w3-top" style="height: 150px;">
 
 			<div class="" style="background-color: #f8f8f8; height: 75px;">
@@ -23,8 +24,8 @@
 				<div style="float: right;">
 					<ul class="w3-navbar" style="margin-top: 20px">
 
-						<li><a href="index.html" class="w3-hover-theme w3-gray">Home</a></li>
-						<li><a href="keranjang.html" class="w3-hover-theme">Keranjang</a></li>
+						<li><a href="index.html" class="w3-hover-theme">Home</a></li>
+						<li><a href="keranjang.html" class="w3-hover-theme w3-gray">Keranjang</a></li>
 						<li><a href="about.html" class="w3-hover-theme">Tentang</a></li>
 						<li><a href="" class="w3-hover-theme">Bantuan</a></li>
 
@@ -51,7 +52,7 @@
                     
                     <a href=""><i class="fa fa-bell" style="margin-left: 90px; margin-top: 25px; font-size: 25px;"></i></a>
 
-                    <a href="index.html"><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 20px; padding-left: 10px; padding-right: 10px; cursor: pointer; margin-left: 10px;">Wishlist</button></a>
+                    <a href="index.html"><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 20px; padding-left: 10px; padding-right: 10px; cursor: pointer; margin-left: 10px;">Whishlist</button></a>
 
                     <a href="profile.html"><i class="fa fa-user" style="margin-left: 30px; margin-top: 25px; font-size: 25px;"></i></a>
 
@@ -63,29 +64,15 @@
 			</div>
 
 		</div>
-		
-		<div style="margin-top: 75px;">
+        <!-- End of HEADER -->
+        
 
-			<div style="position: relative; height: 100px;">
-				<img class="mySlides w3-animate-fading" src="./img/e1.jpeg">
-				<img class="mySlides w3-animate-fading" src="./img/e2.jpeg">
-				<img class="mySlides w3-animate-fading" src="./img/e4.jpeg">
-				<img class="mySlides w3-animate-fading" src="./img/e3.jpeg">
-			</div>
-
-			<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-				<div style="cursor: pointer;" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-				<div style="cursor: pointer;" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-			</div>
-
-		</div>
-
-		<div  style="margin-top: 800px; margin-left: 5%; margin-right: 5%;">
+		<div  style="margin-top: 200px; margin-left: 5%; margin-right: 5%;">
 
 			<hr style="border-top: 2px solid #bbb;border-radius: 5px;">
 
 			<div>
-				<h2 id="kategori" style="align-items: center;"><b>KATEGORI</b></h2>
+				<h2 id="kategori" style="align-items: center;"><b>KERANJANG</b></h2>
 			</div>
 
 			<hr style="border-top: 2px solid #bbb;border-radius: 5px;">
@@ -94,10 +81,7 @@
 			<div class="w3-row" style="margin-left: 3%;">
 				<!-- Column 1 -->
 				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
-					<img src="./img/catG.jpg" style="width:100%;">
-					<div class="w3-center">
-						<p style="text-align: center;"><a href="#" class='w3-btn w3-dark-gray'>Gaming</a></p>
-					</div>
+					<p>produk 1</p>
 				</div>
 				<!-- Column 2 -->
 				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
@@ -290,8 +274,8 @@
 
 				<div>
 	
-					<div class="w3-third w3-card-4" style="width:30%; margin-top: 95px;">
-						<a href="https://www.google.com/maps/place/Jl.+Pasir+Kaliki+No.115,+Arjuna,+Kec.+Cicendo,+Kota+Bandung,+Jawa+Barat+40172/@-6.9069519,107.5951497,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e66aa1f56da3:0xbcc820a34f67b08e!8m2!3d-6.9069519!4d107.5973384"><img src="./img/map.png" style="width:100%; cursor: pointer;"></a>
+					<div class="w3-third w3-card-4 w3-margin" style="width:30%">
+						<a href="https://www.google.com/maps/place/Jl.+Pasir+Kaliki+No.115,+Arjuna,+Kec.+Cicendo,+Kota+Bandung,+Jawa+Barat+40172/@-6.9069519,107.5951497,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e66aa1f56da3:0xbcc820a34f67b08e!8m2!3d-6.9069519!4d107.5973384"><img src="./img/map.png" style="width:100%; cursor: pointer"></a>
 						<div class="w3-center">
 							<h4>Jl. Pasir Kaliki No.115</h4>
 							<p>Arjuna, Kec. Cicendo, Kota Bandung, Jawa Barat 40172</p>
@@ -299,7 +283,7 @@
 					</div>
 
 					<div class="w3-third w3-margin" style="width:30%;">
-						<div class="w3-center">
+						<div class="w3-center" style="margin-top: 40%;">
 							<a href="./index.html"><h4>TokoOnlineKu</h4></a>
 							<a href="#kategori"><p>Kategori</p></a>
 							<a href=""><p>FAQ</p></a>
@@ -307,64 +291,12 @@
 					</div>
 
 					<div class="w3-third w3-margin" style="width:30%;">
-						<div class="w3-center">
+						<div class="w3-center" style="margin-top: 40%;">
 							<h4>Follow Us</h4>
 							<a href=""><i class="fa fa-facebook-square" style="font-size:48px;color:rgb(0, 0, 190)"></i></a>
 							<a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(180, 52, 163)"></i></a>
 							<a href=""><i class="fa fa-twitter" style="font-size:48px;color:rgb(70, 202, 255)"></i></a>
 						</div>
-					</div>
-
-					<div class="w3-third w3-panel w3-border w3-round-xlarge" style="width: 51%; margin-top: 30%; margin-left: 150px; padding-right: 200px;">
-
-						<br>
-
-						<div style="margin-top: -10px;">
-							<h4>Hubungi Kami</h4>
-						</div>
-
-						<div>
-							<form method="post" action="logged home.html">
-
-								<div>
-					  
-								  <label id="label-1" style="font-size: 20px;">Nama</label>
-								  <br>
-								  <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
-								  id="input-1" type="text" name="username" required>
-					  
-								</div>
-					  
-								<div>
-					  
-								  <label id="label-2" style="font-size: 20px;">Email</label>
-								  <br>
-								  <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
-								  id="input-2" type="text" name="password" required>
-					  
-								</div>
-	
-								<div>
-					  
-									<label id="label-2" style="font-size: 20px;">Pesan</label>
-									<br>
-									<input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
-									id="input-2" type="text" name="password" required>
-						
-								  </div>
-
-								  <br><br>
-
-								  <div style="margin-left: 550px; margin-top: -90px;">
-									<button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 25px; padding-left: 10px; padding-right: 10px; cursor: pointer;"><a href="logged home.html"></a>Submit</a></button>
-								</div>
-
-								<br>
-					  
-							</form>
-
-						</div>
-
 					</div>
 					
 				</div>
