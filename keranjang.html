@@ -14,6 +14,20 @@
             .conclusion{
                 float: right;
             }
+            .conlusion_content{
+                padding: 20pt;
+                
+            }
+            .delete{
+                float: right;
+                font-size: xx-large;
+            }
+            .price{
+                font-size: 150%;
+            }
+            .nama_produk{
+                font-size: large;
+            }
         </style>
 	</head>
 
@@ -59,7 +73,7 @@
                     
                     <a href=""><i class="fa fa-bell" style="margin-left: 90px; margin-top: 25px; font-size: 25px;"></i></a>
 
-                    <a href="index.html"><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 20px; padding-left: 10px; padding-right: 10px; cursor: pointer; margin-left: 10px;">Whishlist</button></a>
+                    <a href="index.html"><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 20px; padding-left: 10px; padding-right: 10px; cursor: pointer; margin-left: 10px;">Wishlist</button></a>
 
                     <a href="profile.html"><i class="fa fa-user" style="margin-left: 30px; margin-top: 25px; font-size: 25px;"></i></a>
 
@@ -91,9 +105,11 @@
             
             <!-- LIST OF PRODUCTS -->
 			<div>
+                <input type="checkbox" id="select_all">
+                <label for="select_all">Select All</label>
+                
                 <!-- ROW 1 -->
 				<div class="w3-row-padding">
-
                     <!-- PRODUCT -->
                     <div class="w3-third">
 
@@ -102,6 +118,7 @@
                                 <table>
                                     <tr>
                                         <td rowspan="5">
+                                            <!-- Product Image -->
                                             <div class="image">
                                                 <img src="./img/featT.jpg" alt="Person" style="flex: 1">
                                             </div>
@@ -109,25 +126,219 @@
                                         <td rowspan="5"></td>
                                         <td rowspan="5"></td>
                                         <td rowspan="5"></td>
-                                        <td><p>Nama produk</p></td>
+                                        <td class="nama_produk"><p>Nama produk</p></td>
                                         <td style="float: right;"><div class="checkbox"><input type="checkbox" ></div></td>
                                     </tr>
                                     <tr>
-                                        <td><b>Rp 99.999</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td><p>Catatan</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2"><input type="text"></td>
+                                        <td class="price"><b>Rp 99.999</b></td>
                                         <td><div class="quantity"><input type="number" name="quantity" min="1" max="99"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>Catatan :</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><textarea name="cat" id="cat_area" cols="20" rows="2"></textarea></td>
+                                        
                                     </tr>
                                     <tr>
                                         <td><div class="delete"><i class="fa fa-trash-o"></i></div></td>
                                     </tr>
                                 </table>
+                            </div>
+                        </div>
 
-                                <!-- Checkbox -->
+                    </div>
+                    <!-- End of PRODUCT -->
+
+                    <!-- SHOPPING CONCLUSION -->
+					<div class="w3-third conclusion">
+                        <a href="" style="text-decoration: none;">
+                            <div style="text-align: center;"><h5><b>Ringkasan Belanja</b></h3></div>
+                            <div class="w3-card-2 " style="cursor: pointer; display: flex; margin: 10px;">
+                                <table style="padding: 30px; text-align: center;">
+                                    <tr>
+                                        <td><p>Nama produk 1</p></td>
+                                        <td><p>Rp 99.999</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>Nama produk 2</p></td>
+                                        <td><p>Rp 99.999</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total Harga</b></td>
+                                        <td><b>Rp 199.998</b></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </a>
+                        <div>
+                            <button class="w3-button w3-round-large" style="font-size: 20px; padding-left: 190px; padding-right: 190px; padding-top: 10px; padding-bottom: 10px; cursor: pointer; margin-left: 10px;">
+                                <b>Beli</b>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End of SHOPPING CONCLUSION -->
+
+                </div>
+                <!-- End of ROW 1 -->
+    
+                <!-- ROW 2 -->
+                <div class="w3-row-padding">
+                    <!-- PRODUCT -->
+                    <div class="w3-third">
+
+                        <div style="text-decoration: none;">
+                            <div class="w3-card-2 w3-row-padding" style="cursor: pointer; display: flex; margin: 10px;">
+                                <table>
+                                    <tr>
+                                        <td rowspan="5">
+                                            <!-- Product Image -->
+                                            <div class="image">
+                                                <img src="./img/featT.jpg" alt="Person" style="flex: 1">
+                                            </div>
+                                        </td>
+                                        <td rowspan="5"></td>
+                                        <td rowspan="5"></td>
+                                        <td rowspan="5"></td>
+                                        <td class="nama_produk"><p>Nama produk</p></td>
+                                        <td style="float: right;"><div class="checkbox"><input type="checkbox" ></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="price"><b>Rp 99.999</b></td>
+                                        <td><div class="quantity"><input type="number" name="quantity" min="1" max="99"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>Catatan :</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><textarea name="cat" id="cat_area" cols="20" rows="2"></textarea></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><div class="delete"><i class="fa fa-trash-o"></i></div></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End of PRODUCT -->
+                </div>
+                <!-- End of ROW 2 -->
+
+            </div>
+            <!-- End of LIST OF PRODUCTS -->
+            
+        </div>
+        <!-- End of CONTENT -->
+        <hr style="border-top: 2px solid #bbb;border-radius: 5px;">
+
+        <!-- FOOTER -->
+		<div>
+            <!-- Address -->
+            <div class="w3-third w3-card-4" style="width:30%; margin-top: 95px;">
+                <a href="https://www.google.com/maps/place/Jl.+Pasir+Kaliki+No.115,+Arjuna,+Kec.+Cicendo,+Kota+Bandung,+Jawa+Barat+40172/@-6.9069519,107.5951497,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e66aa1f56da3:0xbcc820a34f67b08e!8m2!3d-6.9069519!4d107.5973384"><img src="./img/map.png" style="width:100%; cursor: pointer;"></a>
+                <div class="w3-center">
+                    <h4>Jl. Pasir Kaliki No.115</h4>
+                    <p>Arjuna, Kec. Cicendo, Kota Bandung, Jawa Barat 40172</p>
+                </div>
+            </div>
+
+            <!-- TokoOnlineKu -->
+            <div class="w3-third w3-margin" style="width:30%;">
+                <div class="w3-center">
+                    <a href="./index.html"><h4>TokoOnlineKu</h4></a>
+                    <a href="#kategori"><p>Kategori</p></a>
+                    <a href=""><p>FAQ</p></a>
+                </div>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="w3-third w3-margin" style="width:30%;">
+                <div class="w3-center">
+                    <h4>Follow Us</h4>
+                    <a href=""><i class="fa fa-facebook-square" style="font-size:48px;color:rgb(0, 0, 190)"></i></a>
+                    <a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(180, 52, 163)"></i></a>
+                    <a href=""><i class="fa fa-twitter" style="font-size:48px;color:rgb(70, 202, 255)"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="w3-third w3-panel w3-border w3-round-xlarge" style="width: 51%; margin-top: 30%; margin-left: 150px; padding-right: 200px;">
+                <br>
+
+                <div style="margin-top: -10px;">
+                    <h4>Hubungi Kami</h4>
+                </div>
+
+                <div>
+                    <form method="post" action="logged home.html">
+
+                        <div>
+              
+                          <label id="label-1" style="font-size: 20px;">Nama</label>
+                          <br>
+                          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+                          id="input-1" type="text" name="username" required>
+              
+                        </div>
+              
+                        <div>
+              
+                          <label id="label-2" style="font-size: 20px;">Email</label>
+                          <br>
+                          <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+                          id="input-2" type="text" name="password" required>
+              
+                        </div>
+
+                        <div>
+              
+                            <label id="label-2" style="font-size: 20px;">Pesan</label>
+                            <br>
+                            <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+                            id="input-2" type="text" name="password" required>
+                
+                        </div>
+
+                          <br><br>
+
+                        <div style="margin-left: 550px; margin-top: -90px;">
+                            <button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 25px; padding-left: 10px; padding-right: 10px; cursor: pointer;"><a href="logged home.html"></a>Submit</a></button>
+                        </div>
+
+                        <br>
+              
+                    </form>
+
+                </div>
+
+            </div>
+            
+        </div>
+        <!-- End of FOOTER -->
+
+	</body>
+
+	<script>
+
+        // SELECT ALL function
+        $(document).ready(function(){
+				$("#select_all").change(function(){
+					$("input:checkbox").prop("checked", $(this).prop("checked"))
+				})
+			});
+        // End of SELECT ALL function
+
+	</script>
+	
+</html>
+
+<!-- Checkbox -->
 
                                 <!-- Product Image -->
                                 <!-- <div class="image">
@@ -148,103 +359,3 @@
                                 
                                 <!-- Delete from Cart -->
                                 <!-- <div class="delete"><i class="fa fa-trash-o"></i></div> -->
-                                
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- End of PRODUCT -->
-
-                    <!-- SHOPPING CONCLUSION -->
-					<div class="w3-third conclusion">
-                        <a href="" style="text-decoration: none;">
-                            <div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px;">
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <!-- End of SHOPPING CONCLUSION -->
-
-                </div>
-                <!-- End of ROW 1 -->
-    
-                <!-- ROW 2 -->
-                <div class="w3-row-padding">
-
-                    <!-- PRODUCT -->
-                    <div class="w3-half">
-                        <a href="" style="text-decoration: none;">
-                            <div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px;">
-                                <div class="">
-                                    <img src="./img/featT.jpg" alt="Person" style="flex: 1">
-                                </div>
-                                <div class="" style="flex: 1; width: 60%">
-                                    <div class="w3-margin" style="text-align: justify;">
-                                        <p>Nama produk</p>
-                                        <br>
-                                        <b class="">Rp 99.999</b>
-                                        <br>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- End of PRODUCT -->
-
-                </div>
-                <!-- End of ROW 2 -->
-
-            </div>
-            <!-- End of LIST OF PRODUCTS -->
-            
-        </div>
-        <!-- End of CONTENT -->
-
-
-        <!-- FOOTER -->
-		<div>
-            <hr style="border-top: 2px solid #bbb;border-radius: 5px;">
-            <div class="w3-third w3-card-4 w3-margin" style="width:30%">
-                <a href="https://www.google.com/maps/place/Jl.+Pasir+Kaliki+No.115,+Arjuna,+Kec.+Cicendo,+Kota+Bandung,+Jawa+Barat+40172/@-6.9069519,107.5951497,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e66aa1f56da3:0xbcc820a34f67b08e!8m2!3d-6.9069519!4d107.5973384"><img src="./img/map.png" style="width:100%; cursor: pointer"></a>
-                <div class="w3-center">
-                    <h4>Jl. Pasir Kaliki No.115</h4>
-                    <p>Arjuna, Kec. Cicendo, Kota Bandung, Jawa Barat 40172</p>
-                </div>
-            </div>
-
-            <div class="w3-third w3-margin" style="width:30%;">
-                <div class="w3-center" style="margin-top: 40%;">
-                    <a href="./index.html"><h4>TokoOnlineKu</h4></a>
-                    <a href="#kategori"><p>Kategori</p></a>
-                    <a href=""><p>FAQ</p></a>
-                </div>
-            </div>
-
-            <div class="w3-third w3-margin" style="width:30%;">
-                <div class="w3-center" style="margin-top: 40%;">
-                    <h4>Follow Us</h4>
-                    <a href=""><i class="fa fa-facebook-square" style="font-size:48px;color:rgb(0, 0, 190)"></i></a>
-                    <a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(180, 52, 163)"></i></a>
-                    <a href=""><i class="fa fa-twitter" style="font-size:48px;color:rgb(70, 202, 255)"></i></a>
-                </div>
-            </div>
-            
-        </div>
-        <!-- End of FOOTER -->
-
-	</body>
-
-	<script>
-
-        // SELECT ALL function
-        $(document).ready(function(){
-				// select all
-				$("#select_all").change(function(){
-					$("input:checkbox").prop("checked", $(this).prop("checked"))
-				})
-			});
-        // End of SELECT ALL function
-
-	</script>
-	
-</html>
