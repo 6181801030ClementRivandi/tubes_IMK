@@ -8,10 +8,17 @@
 		<link rel="stylesheet" href="lib/font-awesome.min.css">
 		<link rel="stylesheet" href="lib/font-awesome.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        <style>
+            .conclusion{
+                float: right;
+            }
+        </style>
 	</head>
 
     <body style="background-color: white;">
+
         <!-- HEADER -->
 		<div class="w3-top" style="height: 150px;">
 
@@ -67,271 +74,177 @@
         <!-- End of HEADER -->
         
 
+        <!-- CONTENT -->
 		<div  style="margin-top: 200px; margin-left: 5%; margin-right: 5%;">
 
-			<hr style="border-top: 2px solid #bbb;border-radius: 5px;">
-
+            <!-- TITLE -->
+            <div>
+                <hr style="border-top: 2px solid #bbb;border-radius: 5px;">
+            
+                <div>
+                    <h2 id="kategori" style="align-items: center;"><b>KERANJANG</b></h2>
+                </div>
+            
+                <hr style="border-top: 2px solid #bbb;border-radius: 5px;">
+            </div>
+            <!-- End of TITLE -->
+            
+            <!-- LIST OF PRODUCTS -->
 			<div>
-				<h2 id="kategori" style="align-items: center;"><b>KERANJANG</b></h2>
-			</div>
+                <!-- ROW 1 -->
+				<div class="w3-row-padding">
 
-			<hr style="border-top: 2px solid #bbb;border-radius: 5px;">
-	
-			<!-- Type 1 row -->
-			<div class="w3-row" style="margin-left: 3%;">
-				<!-- Column 1 -->
-				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
-					<p>produk 1</p>
-				</div>
-				<!-- Column 2 -->
-				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
-					<img src="./img/catF.jpg" style="width:100%;">
-					<div class="w3-center">
-						<p style="text-align: center;"><a href="#" class='w3-btn w3-dark-gray'>Fashion</a></p>
-					</div>
-				</div>
-				<!-- Column 3 -->
-				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
-					<img src="./img/catFF.jpg" style="width:100%;">
-					<div class="w3-center">
-						<p style="text-align: center;"><a href="#" class='w3-btn w3-dark-gray'>Buah Segar</a></p>
-					</div>
-				</div>
-			</div>
+                    <!-- PRODUCT -->
+                    <div class="w3-third">
 
-			<!-- Type 2 row -->
-			<div class="w3-row" style="margin-left: 3%;">
-				<!-- Column 1 -->
-				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
-					<img src="./img/catE.jpg" style="width:100%;">
-					<div class="w3-center">
-						<p style="text-align: center;"><a href="#" class='w3-btn w3-dark-gray'>Elektronik</a></p>
-					</div>
-				</div>
-				<!-- Column 2 -->
-				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
-					<img src="./img/catO.jpg" style="width:100%;">
-					<div class="w3-center">
-						<p style="text-align: center;"><a href="#" class='w3-btn w3-dark-gray'>Kesehatan</a></p>
-					</div>
-				</div>
-				<!-- Column 3 -->
-				<div class="w3-third w3-card-4 w3-margin" style="width:30%">
-					<img src="./img/catK.jpg" style="width:100%;">
-					<div class="w3-center">
-						<p style="text-align: center;"><a href="#" class='w3-btn w3-dark-gray'>Kamera</a></p>
-					</div>
-				</div>
-			</div>
+                        <div style="text-decoration: none;">
+                            <div class="w3-card-2 w3-row-padding" style="cursor: pointer; display: flex; margin: 10px;">
+                                <table>
+                                    <tr>
+                                        <td rowspan="5">
+                                            <div class="image">
+                                                <img src="./img/featT.jpg" alt="Person" style="flex: 1">
+                                            </div>
+                                        </td>
+                                        <td rowspan="5"></td>
+                                        <td rowspan="5"></td>
+                                        <td rowspan="5"></td>
+                                        <td><p>Nama produk</p></td>
+                                        <td style="float: right;"><div class="checkbox"><input type="checkbox" ></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Rp 99.999</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>Catatan</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><input type="text"></td>
+                                        <td><div class="quantity"><input type="number" name="quantity" min="1" max="99"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="delete"><i class="fa fa-trash-o"></i></div></td>
+                                    </tr>
+                                </table>
 
-			<!-- 3 Small Offers, third -->
+                                <!-- Checkbox -->
 
-			<hr style="border-top: 2px solid #bbb;border-radius: 5px;">
+                                <!-- Product Image -->
+                                <!-- <div class="image">
+                                    <img src="./img/featT.jpg" alt="Person" style="flex: 1">
+                                </div> -->
 
-			<div>
-				<h2 style="align-items: center;"><b>PRODUK UNGGULAN</b></h2>
-			</div>
-			
-			<hr style="border-top: 2px solid #bbb;border-radius: 5px;">
+                                <!-- Details -->
+                                <!-- <div class="details" style="flex: 1; width: 60%">
+                                    <div class="w3-margin" style="text-align: justify;">
+                                        <p>Nama produk</p>
+                                        <b class="">Rp 99.999</b>
+                                        <br>
+                                    </div>
+                                </div> -->
 
-			<div>
+                                <!-- Quantity of product -->
+                                <!-- <div class="quantity"><input type="number" name="quantity" min="1" max="99"></div> -->
+                                
+                                <!-- Delete from Cart -->
+                                <!-- <div class="delete"><i class="fa fa-trash-o"></i></div> -->
+                                
+                            </div>
+                        </div>
 
-				<div class="w3-twothird" style="width: 33.3%;">
+                    </div>
+                    <!-- End of PRODUCT -->
 
-					<!-- OFFER 1 -->
-					<a href="" style="text-decoration: none;"><div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px;">
-						<div class="">
-							<img src="./img/featT.jpg" alt="Person" style="flex: 1">
-						</div>
-						<div class="" style="flex: 1; width: 60%">
-							<p class="w3-margin" style="text-align: justify;"><b class="">ipad 1 64Gb 3G + wifi BLACK</b>
-								<br>
-									Ipad 1 64 gb + gsm, kondisi normal.
-									barang masih komplit dus masih ada lengkap untuk internal memori
-							</p>
-						</div>
-					</div></a>
-					<!-- OFFER 2 -->
-					<div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px">
-						<div class="">
-							<img src="./img/feaT.jpg" style="flex: 1">
-						</div>
-						<div class="" style="flex: 1; width: 60%">
-							<p class="w3-margin" style="text-align: justify;"><b class="">Holiday Spice Flat White</b>
-								<br>
-								Smooth ristretto shots of Christmas Blend Espresso Roast and perfectly steamed micro-foam 
-								are infused with warm holiday spices to create a festive version of an espresso classic.
-							</p>
-						</div>
-					</div>
-					<!-- OFFER 3-->
-					<div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px">
-						<div class="">
-							<img src="../img/offer3.jpg" style="flex: 1">
-						</div>
-						<div class="" style="flex: 1; width: 60%">
-							<p class="w3-margin" align="justify"><b class="">Peppermint Mocha</b>
-								<br>
-								A holiday classic made with our signature espresso, steamed milk, sweet mocha sauce 
-								and peppermint-flavored syrup. It's all topped off with whipped cream and dark chocolate curls.
-							</p>
-						</div>
-					</div>
+                    <!-- SHOPPING CONCLUSION -->
+					<div class="w3-third conclusion">
+                        <a href="" style="text-decoration: none;">
+                            <div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px;">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End of SHOPPING CONCLUSION -->
 
-					<hr style="border-top: 2px solid #bbb;border-radius: 5px;">
-				</div>
-	
-				<div class="w3-twothird" style="width: 33.3%;">
-	
-					<!-- OFFER 1 -->
-					<div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px;">
-						<div class="">
-							<img src="./img/featT.jpg" alt="Person" style="flex: 1">
-						</div>
-						<div class="" style="flex: 1; width: 60%">
-							<p class="w3-margin" style="text-align: justify;"><b class="">Spiced Sweet Cream Cold Brew</b>
-								<br>
-								Our Nariño 70 cold brew coffee (slow-steeped for a super smooth flavor) gets dressed 
-								up for the holidays with a dash of spice and a float of house-made sweet cream.
-							</p>
-						</div>
-					</div>
-					<!-- OFFER 2 -->
-					<div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px">
-						<div class="">
-							<img src="../img/offer2.jpg" style="flex: 1">
-						</div>
-						<div class="" style="flex: 1; width: 60%">
-							<p class="w3-margin" align="justify"><b class="">Holiday Spice Flat White</b>
-								<br>
-								Smooth ristretto shots of Christmas Blend Espresso Roast and perfectly steamed micro-foam 
-								are infused with warm holiday spices to create a festive version of an espresso classic.
-							</p>
-						</div>
-					</div>
-					<!-- OFFER 3-->
-					<div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px">
-						<div class="">
-							<img src="../img/offer3.jpg" style="flex: 1">
-						</div>
-						<div class="" style="flex: 1; width: 60%">
-							<p class="w3-margin" align="justify"><b class="">Peppermint Mocha</b>
-								<br>
-								A holiday classic made with our signature espresso, steamed milk, sweet mocha sauce 
-								and peppermint-flavored syrup. It's all topped off with whipped cream and dark chocolate curls.
-							</p>
-						</div>
-					</div>
+                </div>
+                <!-- End of ROW 1 -->
+    
+                <!-- ROW 2 -->
+                <div class="w3-row-padding">
 
-					<hr style="border-top: 2px solid #bbb;border-radius: 5px;">
-				</div>
-	
-				<div class="w3-twothird" style="width: 33.3%;">
-	
-					<!-- OFFER 1 -->
-					<div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px;">
-						<div class="">
-							<img src="./img/featT.jpg" alt="Person" style="flex: 1">
-						</div>
-						<div class="" style="flex: 1; width: 60%">
-							<p class="w3-margin" style="text-align: justify;"><b class="">Spiced Sweet Cream Cold Brew</b>
-								<br>
-								Our Nariño 70 cold brew coffee (slow-steeped for a super smooth flavor) gets dressed 
-								up for the holidays with a dash of spice and a float of house-made sweet cream.
-							</p>
-						</div>
-					</div>
-					<!-- OFFER 2 -->
-					<div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px">
-						<div class="">
-							<img src="../img/offer2.jpg" style="flex: 1">
-						</div>
-						<div class="" style="flex: 1; width: 60%">
-							<p class="w3-margin" align="justify"><b class="">Holiday Spice Flat White</b>
-								<br>
-								Smooth ristretto shots of Christmas Blend Espresso Roast and perfectly steamed micro-foam 
-								are infused with warm holiday spices to create a festive version of an espresso classic.
-							</p>
-						</div>
-					</div>
-					<!-- OFFER 3-->
-					<div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px">
-						<div class="">
-							<img src="../img/offer3.jpg" style="flex: 1">
-						</div>
-						<div class="" style="flex: 1; width: 60%">
-							<p class="w3-margin" align="justify"><b class="">Peppermint Mocha</b>
-								<br>
-								A holiday classic made with our signature espresso, steamed milk, sweet mocha sauce 
-								and peppermint-flavored syrup. It's all topped off with whipped cream and dark chocolate curls.
-							</p>
-						</div>
-					</div>
+                    <!-- PRODUCT -->
+                    <div class="w3-half">
+                        <a href="" style="text-decoration: none;">
+                            <div class="w3-card-2" style="cursor: pointer; display: flex; margin: 10px;">
+                                <div class="">
+                                    <img src="./img/featT.jpg" alt="Person" style="flex: 1">
+                                </div>
+                                <div class="" style="flex: 1; width: 60%">
+                                    <div class="w3-margin" style="text-align: justify;">
+                                        <p>Nama produk</p>
+                                        <br>
+                                        <b class="">Rp 99.999</b>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End of PRODUCT -->
 
-					<hr style="border-top: 2px solid #bbb;border-radius: 5px;">
-					
-				</div>
+                </div>
+                <!-- End of ROW 2 -->
 
-				<div>
-	
-					<div class="w3-third w3-card-4 w3-margin" style="width:30%">
-						<a href="https://www.google.com/maps/place/Jl.+Pasir+Kaliki+No.115,+Arjuna,+Kec.+Cicendo,+Kota+Bandung,+Jawa+Barat+40172/@-6.9069519,107.5951497,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e66aa1f56da3:0xbcc820a34f67b08e!8m2!3d-6.9069519!4d107.5973384"><img src="./img/map.png" style="width:100%; cursor: pointer"></a>
-						<div class="w3-center">
-							<h4>Jl. Pasir Kaliki No.115</h4>
-							<p>Arjuna, Kec. Cicendo, Kota Bandung, Jawa Barat 40172</p>
-						</div>
-					</div>
+            </div>
+            <!-- End of LIST OF PRODUCTS -->
+            
+        </div>
+        <!-- End of CONTENT -->
 
-					<div class="w3-third w3-margin" style="width:30%;">
-						<div class="w3-center" style="margin-top: 40%;">
-							<a href="./index.html"><h4>TokoOnlineKu</h4></a>
-							<a href="#kategori"><p>Kategori</p></a>
-							<a href=""><p>FAQ</p></a>
-						</div>
-					</div>
 
-					<div class="w3-third w3-margin" style="width:30%;">
-						<div class="w3-center" style="margin-top: 40%;">
-							<h4>Follow Us</h4>
-							<a href=""><i class="fa fa-facebook-square" style="font-size:48px;color:rgb(0, 0, 190)"></i></a>
-							<a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(180, 52, 163)"></i></a>
-							<a href=""><i class="fa fa-twitter" style="font-size:48px;color:rgb(70, 202, 255)"></i></a>
-						</div>
-					</div>
-					
-				</div>
+        <!-- FOOTER -->
+		<div>
+            <hr style="border-top: 2px solid #bbb;border-radius: 5px;">
+            <div class="w3-third w3-card-4 w3-margin" style="width:30%">
+                <a href="https://www.google.com/maps/place/Jl.+Pasir+Kaliki+No.115,+Arjuna,+Kec.+Cicendo,+Kota+Bandung,+Jawa+Barat+40172/@-6.9069519,107.5951497,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e66aa1f56da3:0xbcc820a34f67b08e!8m2!3d-6.9069519!4d107.5973384"><img src="./img/map.png" style="width:100%; cursor: pointer"></a>
+                <div class="w3-center">
+                    <h4>Jl. Pasir Kaliki No.115</h4>
+                    <p>Arjuna, Kec. Cicendo, Kota Bandung, Jawa Barat 40172</p>
+                </div>
+            </div>
 
-			</div>
-			
-		</div>
-		
+            <div class="w3-third w3-margin" style="width:30%;">
+                <div class="w3-center" style="margin-top: 40%;">
+                    <a href="./index.html"><h4>TokoOnlineKu</h4></a>
+                    <a href="#kategori"><p>Kategori</p></a>
+                    <a href=""><p>FAQ</p></a>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin" style="width:30%;">
+                <div class="w3-center" style="margin-top: 40%;">
+                    <h4>Follow Us</h4>
+                    <a href=""><i class="fa fa-facebook-square" style="font-size:48px;color:rgb(0, 0, 190)"></i></a>
+                    <a href=""><i class="fa fa-instagram" style="font-size:48px;color:rgb(180, 52, 163)"></i></a>
+                    <a href=""><i class="fa fa-twitter" style="font-size:48px;color:rgb(70, 202, 255)"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <!-- End of FOOTER -->
+
 	</body>
 
 	<script>
-		var myIndex = 1;
-		carousel(myIndex);
-		
-		function carousel(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  if (n > x.length) {myIndex = 1}
-		  if ( n < 1){myIndex = x.length}  
-		  for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-		  }  
-		  x[myIndex-1].style.display = "block";  
-			  setTimeout(carousel, 9000); 
-			  
-		if ( myIndex < x.length){
-			myIndex ++;
-		}else{
-			myIndex = 1;
-		}
-		     
-		}
-		function plusDivs(n) {
-  			carousel(myIndex += n);
-		}
+
+        // SELECT ALL function
+        $(document).ready(function(){
+				// select all
+				$("#select_all").change(function(){
+					$("input:checkbox").prop("checked", $(this).prop("checked"))
+				})
+			});
+        // End of SELECT ALL function
+
 	</script>
 	
 </html>
