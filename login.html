@@ -3,34 +3,48 @@
 <html lang="en" dir="ltr">
 
   <head>
-    
-    <meta charset="utf-8">
 
-    <title>TokoOnlineKu - Login</title>
+    <title>TokoOnlineKu | Daftar</title>
 
-    <link rel="stylesheet" href="../View/style/loginStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="lib/w3.css">
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="lib/font-awesome.min.css">
+		<link rel="stylesheet" href="lib/font-awesome.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
   </head>
 
-  <body>
+  <body style="background-color: #f8f8f8;">
 
-    <div class="main">
+    <div style="margin-left: 10%; margin-top: 1%; margin-right: 10%;">
 
-      <p>TokoOnlineKu</p>
+      <div class="w3-center">
+        <img src="img/tokoOnlineKuLogo.JPG" class="" style="height: 75px; width: 350px;">
+      </div>
 
       <hr>
 
-      <h1 style="max-width: 500px; margin: auto;">Login</h1>
-
       <br>
 
-      <div class="divLogin" style = "max-width: 500px; margin: auto;">
+      <div style="width: 40%; float: left;">
 
-        <form method="post" action="../Controller/login.php">
+        <h1 style="text-align: center; margin-top: 10%;">Buat akun sekarang dan nikmati berbagai kemudahan dengan TokoOnlineKu!</h1>
 
-          <div class="input-group">
+        <img src="img/e2.jpeg" style="margin-top: 12%;">
 
-            <label id="label-1" style="font-size: 20px;">Username</label>
+      </div>
+
+      <div style="width: 50%; float :right; border-style: double;" class="w3-panel w3-border w3-round-xlarge">
+
+        <h1 style="text-align: center;">Daftar Sekarang</h1>
+
+        <form method="post" action="">
+
+          <div>
+
+            <label id="label-1" style="font-size: 20px;">Email</label>
             <br>
             <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
             id="input-1" type="text" name="username" required>
@@ -39,52 +53,74 @@
 
           <br>
 
-          <div class="input-group">
+          <div>
 
-            <label id="label-2" style="font-size: 20px;">Password</label>
+            <label id="label-1" style="font-size: 20px;">Username Baru</label>
             <br>
-            <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
-            type="password" name="password" required></input>
+            <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+            id="input-1" type="text" name="username" required>
 
           </div>
 
           <br>
 
           <div>
-            <input class="button" type="submit" value="Login">
+
+            <label id="label-2" style="font-size: 20px;">Password Baru</label>
+            <br>
+            <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+            id="input-2" type="text" name="password" required>
+
+          </div>
+
+          <br>
+
+          <div>
+
+            <label id="label-2" style="font-size: 20px;"> Konfirmasi Password Baru</label>
+            <br>
+            <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+            id="input-2" type="text" name="password" required>
+
+          </div>
+
+          <br>
+
+          <div>
+
+            <label id="label-2" style="font-size: 20px;">Nomor Telepon</label>
+            <br>
+            <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+            id="input-2" type="text" name="password" required>
+
+          </div>
+
+          <div class="w3-center">
+            <p><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 25px; padding-left: 10px; padding-right: 10px; cursor: pointer;">Daftar</button></p>
           </div>
 
         </form>
 
       </div>
 
-      <a id="fp" style="margin: auto;font-size: 20px;" href="../View/forgotPassword.html"><b>Forgot Password?</b></a>
+      <div style="margin-top: 750px;">
 
-      <br><hr><br>
+        <hr>
 
-      <a style="max-width: 500px; margin: auto;font-size: 20px;"><b>Don't have an account? &nbsp;</b><a id="su" style="font-size: 20px;" href="../View/registration.html"><b>Sign Up</b></a></a>
+        <div><p style="text-align: center; font-size: 20px;">Sudah punya akun? <a href="masuk.html">Masuk</a> disini.</p></div>
+
+        <div style="text-align: center;"><a href="index.html"><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 25px; padding-left: 10px; padding-right: 10px; cursor: pointer;">Kembali ke TokoOnlineKu</button></a>
+        </div>
+
+        <br><br>
+
+      </div>
 
     </div>
 
-    <script src="../View/style/Script/login.js"></script>
-    <div id='id01' class="w3-modal">
-      <!-- Modal Box-->
-      <div class="w3-modal-content" style='width: 30%; padding: 0.5%;'>
-          <!-- Close Button -->
-          <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
-          <!-- Sign in form -->
-          <form class='' method='post' action='#'>
-              <p class="">Enter Username and Password</p>
-              <input class="w3-input" type="text" placeholder="Username"><br>
-              <input class="w3-input" type="text" placeholder="Password">
-              <p>
-                  <button class="w3-button w3-green w3-round-large">SIGN IN</button>
-                  <button class="w3-button w3-round-large" onclick="document.getElementById('id01').style.display='none'">CANCEL</button>
-              </p>
-              <p><a href=""><u>Forget password?</u></a></p>
-              <p>if you don't have any account, please <a href=""><u>SIGN UP</u></a>.</p>
-          </form>
-      </div>
+
+    <script src="./script/login.js"></script>
+
   </body>
 
 </html>
