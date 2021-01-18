@@ -23,7 +23,7 @@
 				<div style="float: right;">
 					<ul class="w3-navbar" style="margin-top: 20px">
 
-						<li><a href="index.html" class="w3-hover-theme">Home</a></li>
+						<li><a href="logged home.html" class="w3-hover-theme">Home</a></li>
 						<li><a href="keranjang.html" class="w3-hover-theme">Keranjang</a></li>
 						<li><a href="about.html" class="w3-hover-theme">Tentang</a></li>
 						<li><a href="bantuan.html" class="w3-hover-theme w3-gray">Bantuan</a></li>
@@ -37,28 +37,34 @@
 
 			<div class="" style="background-color: #f8f8f8; height: 80px;">
 
-				<div style="background-color: #f8f8f8; width: 1190px; margin-left: 22%; overflow: hidden">
-					
-					<form action="/action_page.php">
-						<div style="width: 800px; float: left; margin-top: 5px;">
-							<input type="text" placeholder="cari barangmu disini" name="search">
-						</div>
-						<div style="float: right; margin-top: 9px;">
-							<button type="submit" style="font-size: 26px; margin-top: 5px; margin-left: -380px; margin-right: 100px;"><i class="fa fa-search"></i></button>
-						</div>
-						
-                    </form>
+				<div class="" style="background-color: #f8f8f8; height: 75px;">
+
+                    <div style="background-color: #f8f8f8; width: 1190px; margin-left: 22%; overflow: hidden">
+                        
+                        <form action="search result logged.html">
+                            <div style="width: 800px; float: left; margin-top: 5px;">
+                                <input type="text" placeholder="cari barangmu disini" name="search">
+                            </div>
+                            <div style="float: right; margin-top: 9px;">
+                                <button type="submit" style="font-size: 26px; margin-top: 5px; margin-left: -380px; margin-right: 100px;"><i class="fa fa-search"></i></button>
+                            </div>
+                            
+                        </form>
+                        
+                        <a href=""><i class="fa fa-bell" style="margin-left: 70px; margin-top: 25px; font-size: 20px;"></i></a>
+    
+                        <a href="#"><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 17px; padding-left: 10px; padding-right: 10px; cursor: pointer; margin-left: 10px;">Wishlist</button></a>
+    
+                        <a href="profile.html"><i class="fa fa-user" style="margin-left: 20px; margin-top: 25px; font-size: 25px;"></i></a>
+    
+                        <a href="profile.html" style="text-decoration: none;"><p style="margin-top: -30px; margin-left: 1025px;">username</p></a>
+                        
+                        <a href="index.html" style="text-decoration: none;"><p style="margin-top: -37px; margin-left: 1120px;">logout</p></a>
+    
+    
+                    </div>	
                     
-                    <a href=""><i class="fa fa-bell" style="margin-left: 90px; margin-top: 25px; font-size: 25px;"></i></a>
-
-                    <a href="index.html"><button class="w3-button w3-gray w3-round-large" style="border-style: none; font-size: 20px; padding-left: 10px; padding-right: 10px; cursor: pointer; margin-left: 10px;">Wishlist</button></a>
-
-                    <a href="profile.html"><i class="fa fa-user" style="margin-left: 30px; margin-top: 25px; font-size: 25px;"></i></a>
-
-                    <a href="profile.html" style="text-decoration: none;"><p style="margin-top: -30px; margin-left: 1085px;">username</p></a>
-
-
-				</div>	
+                </div>
 				
             </div>
             
@@ -75,7 +81,7 @@
                 <h3 style="text-align: center;">Silakan ketik pertanyaan Anda pada kotak di bawah ini!</h3>
 
                 <form action="/action_page.php"style="padding-top:30px;">
-                    <center><textarea rows="4" cols="180"style=""placeholder="Silakan ketik pertanyaan Anda disini!"></textarea></center>
+                    <center><textarea rows="4" cols="180"style="resize : none" placeholder="Silakan ketik pertanyaan Anda disini!"></textarea></center>
                     <br><br>
                 </form>
                 <div class="w3-center">
@@ -127,13 +133,14 @@
             <hr style="border-top: 2px solid #bbb;border-radius: 5px; margin: 0;">
             <h1 class="w3-center">Hubungi Kami</h1>
 
-            <div style="align-content: center;">
+            <div style="align-content: center; margin-left: 17.5%; margin-top: -100px;">
                 <div class="w3-twothird w3-card-4" style="width:20%; margin-top: 95px; margin-left: 5%; margin-bottom: 20px;">
                     <div class="w3-center">
                         <h3>Layanan Customer</h3>
                         <div>
                             <i class="fa fa-phone w3-large"style="padding-right : 10px"></i>08xxxxxxxxxx
                         </div>
+                        <br>
                     </div>
                 </div>
                 <div class="w3-twothird w3-card-4" style="width:20%; margin-top: 95px; margin-left: 5%; margin-bottom: 20px;">
@@ -143,6 +150,7 @@
                             <button class="w3-button w3-round-xxlarge"><i class = "fa fa-comment" style="padding-right : 10px"></i>Chat dengan kami!</button>
                         </div>
                     </div>
+                    <br>
                 </div>
                 <div class="w3-twothird w3-card-4" style="width:20%; margin-top: 95px; margin-left: 5%; margin-bottom: 20px;">
                     <div class="w3-center">
@@ -151,6 +159,7 @@
                             <button class="w3-button w3-round-xxlarge">Mulai Chat</button>
                         </div>
                     </div>
+                    <br>
                 </div>
             </div>
 		</div>
